@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weightvalue: 1.5
+  weightdate: 2018-11-25
+  user_id: 1
+
+two:
+  weightvalue: 1.5
+  weightdate: 2018-11-25
+  user_id: 1
