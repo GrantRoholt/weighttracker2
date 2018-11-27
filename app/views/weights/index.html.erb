@@ -26,9 +26,7 @@
   </tbody>
 </table>
 
-
-<%= line_chart Weight.group_by_day(:weightdate).count %>
-
+<%= line_chart Weight.pluck(:weightdate, :weightvalue) %>
 
 <br>
 
