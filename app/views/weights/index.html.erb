@@ -26,6 +26,10 @@
   </tbody>
 </table>
 
+
+<%= line_chart Weight.group_by_day(:weightdate).count %>
+
+
 <br>
 
 <%= link_to 'New Weight', new_weight_path %>
