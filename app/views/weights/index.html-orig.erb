@@ -1,25 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Weights Chart</h1>
+<h1>Weights</h1>
 
-<br>
-
-<%= link_to 'New Weight', new_weight_path %>
-<br>
-<br>
-
-<%= area_chart Weight.pluck(:weightdate, :weightvalue) %>
-<br>
-<br>
-
-<h1>Weight List</h1>
-<br>
 <table>
   <thead>
     <tr>
-      <th>Weight   |</th>
-      <th>Weight Date   |</th>
-      <th>   User</th>
+      <th>Weightvalue</th>
+      <th>Weightdate</th>
+      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -37,3 +25,11 @@
     <% end %>
   </tbody>
 </table>
+
+
+<%= area_chart Weight.pluck(:weightdate, :weightvalue) %>
+
+
+<br>
+
+<%= link_to 'New Weight', new_weight_path %>
